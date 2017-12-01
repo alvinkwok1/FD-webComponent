@@ -1,0 +1,97 @@
+.fd-banner {
+    position: relative;
+    background: #ffffff;
+    height: 380px;
+    width: 100%;
+}
+.fd-bd{
+    height: 380px;
+    width: 100%;
+}
+
+.fd-bd ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.fd-bd ul li{
+    /*display: none;*/
+    position: relative;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+
+.fd-bd ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fd-hd{
+    position: relative;
+    bottom: 20px;
+}
+.fd-hd ul{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    list-style: none;
+    bottom: 0;
+}
+.fd-hd ul li{
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height:10px;
+    margin: 0px 5px;
+    background: #000;
+    opacity:0.5;
+    font-size: 0;
+    z-index: 100;
+}
+
+.fd-hd ul .active{
+    background: #ffff00;
+}
+
+.fd-bd-pre,.fd-bd-next{
+    width: 40px;
+    height: 60px;
+    display: none;
+    top:40%;
+    background: #000000;
+    opacity: 0.5;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.fd-bd-pre{
+
+    position: absolute;
+    left: 15%;
+    background-image: url("../image/slider-arrow.png");
+    background-position: -126px -137px;
+
+}
+.fd-bd-next {
+    position: absolute;
+    right: 15%;
+    background-image: url("../image/slider-arrow.png");
+    background-position: -250px -137px;
+}
+
+.fd-banner:hover .fd-bd-pre,
+.fd-banner:hover .fd-bd-next{
+    display: block;
+}
